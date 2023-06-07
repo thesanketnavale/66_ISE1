@@ -1,0 +1,18 @@
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        int limit = 100;
+        int firstTerm = 0;
+        int secondTerm = 1;
+        
+        System.out.println("Fibonacci Series up to " + limit + ":");
+        System.out.print(firstTerm + " " + secondTerm);
+
+        int nextTerm = firstTerm + secondTerm;
+        while (nextTerm <= limit) {
+            System.out.print(" " + nextTerm);
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+            nextTerm = firstTerm + secondTerm;
+        }
+    }
+}
